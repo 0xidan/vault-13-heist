@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VAULT 13 — a tiny museum heist</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0b0f18; }
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: system-ui, sans-serif;
+    color: #f3ead2;
+    padding: 16px 0;
+    box-sizing: border-box;
+  }
+  canvas {
+    width: min(96vw, 960px);
+    height: auto;
+    border: 2px solid #c9a227;
+    border-radius: 6px;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.55);
+    background: #10182b;
+  }
+  p.hint { margin: 0; font-size: 13px; color: rgba(243, 234, 210, 0.65); text-align: center; }
+  p.hint b { color: #f3ead2; }
+</style>
+</head>
+<body>
+<canvas id="game" width="960" height="704"></canvas>
+<p class="hint"><b>WASD / arrows</b> move &nbsp;•&nbsp; <b>Shift</b> sneak &nbsp;•&nbsp; <b>Click</b> throw a decoy coin &nbsp;•&nbsp; <b>R</b> restart — steal the Aurora Diamond and reach the EXIT.</p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
